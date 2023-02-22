@@ -13,6 +13,22 @@ const SIDENAV_LINKS = [
     color: "#ff4f42",
     altColor: "#FFF0F0",
   },
+  {
+    id: "users",
+    title: "Quản lý người dùng",
+    to: "/admin/users",
+    icon: <i className="fa-regular fa-user"></i>,
+    color: "#ff4f42",
+    altColor: "#FFF0F0",
+  },
+  {
+    id: "features",
+    title: "Tính năng",
+    to: "/admin/features",
+    icon: <i className="fa-regular fa-pen"></i>,
+    color: "#ff4f42",
+    altColor: "#FFF0F0",
+  },
 ];
 
 export const SideNav = () => {

@@ -8,6 +8,9 @@ export const API_CONFIG = {
   gateway: apiGateway,
   mockDelay: 2000,
   endpoints: {
-    questions: { path: "/questions" },
+    questions: { path: "question" },
+    question: { path: "question/:pk" },
+    users: { path: "user/all" },
+    banUser: { path: "user/all" },
   },
 };
