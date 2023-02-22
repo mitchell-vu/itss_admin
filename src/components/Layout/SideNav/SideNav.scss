@@ -1,0 +1,44 @@
+$side-bar-width-shrink: 5rem;
+$side-bar-width-expanded: 18rem;
+
+.sidebar {
+  min-width: $side-bar-width-shrink;
+
+  .side-nav {
+    &__inner {
+      z-index: 2;
+      width: $side-bar-width-shrink;
+      transition: width 300ms cubic-bezier(0.2, 0, 0.38, 0.9);
+
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 8%), 0 4px 12px rgba(0, 0, 0, 24%);
+
+      &:hover {
+        width: $side-bar-width-expanded;
+
+        .side-nav__link__title {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__link {
+      &__icon {
+        color: #707d8fca;
+        background-color: rgba(200, 200, 200, 0.2);
+        transition: all 0.1s ease-in-out;
+      }
+      &__title {
+        transition: opacity 300ms linear;
+        opacity: 0;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        .side-nav__link__icon {
+          color: #b7c3d3;
+          background-color: rgba(200, 200, 200, 0.2);
+        }
+      }
+    }
+  }
+}

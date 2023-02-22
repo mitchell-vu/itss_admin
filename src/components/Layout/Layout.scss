@@ -1,0 +1,28 @@
+$side-bar-width-shrink: 82px;
+$side-bar-width-expanded: 280px;
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    width: calc(100% - $side-bar-width-shrink) !important;
+
+    .header {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .main {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+.header {
+  .dropdown {
+    &-toggle:hover {
+      color: black;
+      background: rgba(200, 200, 200, 0.2);
+      border-radius: 30px;
+    }
+  }
+}
